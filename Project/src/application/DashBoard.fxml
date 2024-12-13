@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="Stack_pane" prefHeight="798.0" prefWidth="1471.0" stylesheets="@buttons.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashBoardController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane fx:id="Bpane" prefHeight="792.0" prefWidth="1549.0">
+               <top>
+                  <AnchorPane fx:id="top_anch" prefHeight="45.0" prefWidth="1551.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox layoutY="-1.6" prefHeight="51.0" prefWidth="1549.0" style="-fx-background-color: #524992;" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0" />
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="751.0" prefWidth="906.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="133.0" layoutY="469.0" prefHeight="278.0" prefWidth="1380.0">
+                           <children>
+                              <LineChart fx:id="Saleslinechart" layoutX="14.0" layoutY="37.0" prefHeight="239.0" prefWidth="690.0" title="Sales">
+                                <xAxis>
+                                  <CategoryAxis fx:id="SalesXAxis" side="BOTTOM" />
+                                </xAxis>
+                                <yAxis>
+                                  <NumberAxis side="LEFT" />
+                                </yAxis>
+                              </LineChart>
+                              <LineChart fx:id="Purchaselinechart" layoutX="727.0" layoutY="37.0" prefHeight="239.0" prefWidth="690.0" title="Purchases">
+                                 <xAxis>
+                                    <CategoryAxis fx:id="PurchaseXAxis" side="BOTTOM" />
+                                 </xAxis>
+                                 <yAxis>
+                                    <NumberAxis side="LEFT" />
+                                 </yAxis>
+                              </LineChart>
+                              <ComboBox fx:id="SMonthcbx" layoutX="40.0" layoutY="12.0" onAction="#UpdateSchart" prefWidth="150.0" promptText="Month" />
+                              <ComboBox fx:id="SYearcbx" layoutX="213.0" layoutY="12.0" onAction="#UpdateSchart" prefWidth="150.0" promptText="Year" />
+                              <ComboBox fx:id="PYearcbx" layoutX="961.0" layoutY="12.0" onAction="#UpdatePchart" prefWidth="150.0" promptText="Year" />
+                              <ComboBox fx:id="PMonthcbx" layoutX="777.0" layoutY="12.0" onAction="#UpdatePchart" prefWidth="150.0" promptText="Month" />
+                              <Line endX="106.39984130859375" endY="486.4000244140625" layoutX="612.0" layoutY="-205.0" startX="106.3997802734375" startY="207.49996948242188" stroke="#524992" strokeWidth="3.0" />
+                           </children>
+                        </AnchorPane>
+                        <Line endX="1285.7999267578125" layoutX="262.0" layoutY="467.0" startX="-118.0" startY="3.0517578125E-5" stroke="#524992" strokeWidth="3.0" />
+                        <AnchorPane layoutX="145.0" layoutY="14.0" prefHeight="143.0" prefWidth="1390.0" style="-fx-background-color: #fff; -fx-background-radius: 8; -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 5,0,0,0);">
+                           <children>
+                              <AnchorPane layoutX="26.0" layoutY="8.0" prefHeight="128.0" prefWidth="198.0" style="-fx-background-color: #524992;">
+                                 <children>
+                                    <ImageView fitHeight="61.0" fitWidth="63.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/customers.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="45.0" layoutY="94.0" style="-fx-font-family: &quot;Times new Roman&quot;;" text="Number of Customers" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="Nocustomerslbl" alignment="TOP_RIGHT" layoutX="104.0" layoutY="14.0" prefHeight="26.0" prefWidth="82.0" text="0" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="252.0" layoutY="8.0" prefHeight="128.0" prefWidth="198.0" style="-fx-background-color: #524992;">
+                                 <children>
+                                    <ImageView fitHeight="61.0" fitWidth="63.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/supplier.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="45.0" layoutY="94.0" style="-fx-font-family: &quot;Times new Roman&quot;;" text="Number of Suppliers" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="Nosupplierslbl" alignment="TOP_RIGHT" layoutX="104.0" layoutY="14.0" prefHeight="26.0" prefWidth="82.0" text="0" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="470.0" layoutY="8.0" prefHeight="128.0" prefWidth="198.0" style="-fx-background-color: #524992;">
+                                 <children>
+                                    <ImageView fitHeight="61.0" fitWidth="63.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/employee.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="45.0" layoutY="94.0" style="-fx-font-family: &quot;Times new Roman&quot;;" text="Number of Employees" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="Noempslbl" alignment="TOP_RIGHT" layoutX="104.0" layoutY="14.0" prefHeight="26.0" prefWidth="82.0" text="0" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="695.0" layoutY="8.0" prefHeight="128.0" prefWidth="198.0" style="-fx-background-color: #524992;">
+                                 <children>
+                                    <ImageView fitHeight="61.0" fitWidth="63.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/truck.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="82.0" layoutY="94.0" style="-fx-font-family: &quot;Times new Roman&quot;;" text="Number of Cars" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="Nocarslbl" alignment="TOP_RIGHT" layoutX="104.0" layoutY="14.0" prefHeight="26.0" prefWidth="82.0" text="0" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="919.0" layoutY="8.0" prefHeight="128.0" prefWidth="198.0" style="-fx-background-color: #524992;">
+                                 <children>
+                                    <ImageView fitHeight="61.0" fitWidth="63.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/deliver.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="73.0" layoutY="94.0" style="-fx-font-family: &quot;Times new Roman&quot;;" text="In-delivery orders" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="Nodeliverylbl" alignment="TOP_RIGHT" layoutX="104.0" layoutY="14.0" prefHeight="26.0" prefWidth="82.0" text="0" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane layoutX="1149.0" layoutY="8.0" prefHeight="128.0" prefWidth="198.0" style="-fx-background-color: #524992;">
+                                 <children>
+                                    <ImageView fitHeight="61.0" fitWidth="63.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/income.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="83.0" layoutY="94.0" style="-fx-font-family: &quot;Times new Roman&quot;;" text="Today's Income" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="Noincomelbl" alignment="TOP_RIGHT" layoutX="104.0" layoutY="14.0" prefHeight="26.0" prefWidth="82.0" text="\$0" textFill="WHITE">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                        <Line endX="1285.7999267578125" layoutX="255.0" layoutY="166.0" startX="-112.60000610351562" startY="-1.52587890625E-5" stroke="#524992" strokeWidth="3.0" />
+                        <TableView fx:id="Outstock_tbv" layoutX="211.0" layoutY="204.0" prefHeight="251.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="Prodname_col" prefWidth="100.0" text="Product Name" />
+                            <TableColumn fx:id="Prodid_col" prefWidth="100.0" text="Product ID" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="228.0" layoutY="176.0" prefHeight="27.0" prefWidth="165.0" style="-fx-font-family: &quot;Times new roman&quot;;" text="Out of Stock Products">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="delivery_tbv" layoutX="464.0" layoutY="204.0" prefHeight="251.0" prefWidth="300.0">
+                           <columns>
+                              <TableColumn fx:id="deliveryid_col" prefWidth="100.0" text="Order ID" />
+                              <TableColumn fx:id="Destination_col" prefWidth="100.0" text="Destination " />
+                              <TableColumn fx:id="Carid_col" prefWidth="100.0" text="Car ID" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="545.0" layoutY="176.0" prefHeight="27.0" prefWidth="138.0" style="-fx-font-family: &quot;Times new roman&quot;;" text="In-delivery Orders">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="unpaid_tbv" layoutX="846.0" layoutY="204.0" prefHeight="251.0" prefWidth="300.0">
+                           <columns>
+                              <TableColumn fx:id="unpaidid_col" prefWidth="100.0" text="Order ID" />
+                              <TableColumn fx:id="unpaidprice_col" prefWidth="100.0" text="Total Price" />
+                              <TableColumn fx:id="Remaining_col" prefWidth="100.0" text="Remaining" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="942.0" layoutY="176.0" prefHeight="27.0" prefWidth="108.0" style="-fx-font-family: &quot;Times new roman&quot;;" text="Unpaid Orders">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="Sales_tbv" layoutX="1197.0" layoutY="204.0" prefHeight="251.0" prefWidth="300.0">
+                           <columns>
+                              <TableColumn fx:id="Todaysorderid_col" prefWidth="100.0" text="Order ID" />
+                              <TableColumn fx:id="customerid_col" prefWidth="100.0" text="Customer ID" />
+                              <TableColumn fx:id="TodaysOrdertot_col" prefWidth="100.0" text="Total Price" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="1267.0" layoutY="176.0" prefHeight="27.0" prefWidth="159.0" style="-fx-font-family: &quot;Times new roman&quot;;" text="Today's Sales Orders">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane fx:id="inside_Anch_left" layoutY="4.0" prefHeight="747.0" prefWidth="142.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1407.0" AnchorPane.topAnchor="4.0">
+                           <children>
+                              <VBox prefHeight="749.6" prefWidth="144.0" spacing="3.0" style="-fx-background-color: #6B60BD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="warehousesButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="144.0" style="-fx-background-color: #4E40A0;" text="DashBoard" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/2329087.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="employeesButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Employees" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/employees.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="ordersButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Orders" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/ordericon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="vehiclesButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Vehicles" textFill="#f7f7f7">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/vehicle.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="productsButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="168.0" style="-fx-background-color: #6B60BD;" text="Products" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/sanitaryproducts.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="warehousesButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Warehouses" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/warehouses.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="suppliersButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Suppliers" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/suppliers.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="departmentsButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: #6B60BD;" text="Departments" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/department.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="clientButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: #6B60BD;" text="Clients" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/clients.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="exitButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="190.0" style="-fx-background-color: #6B60BD;" text="Exit" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/free-exit-icon-2860-thumb.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EmployeesController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="428.0" prefWidth="632.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="475.0" prefWidth="170.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-44.0" layoutY="34.0" prefHeight="507.2" prefWidth="170.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox prefHeight="507.2" prefWidth="170.4" spacing="3.0" style="-fx-background-color: #6B60BD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="dashBoardButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: #6B60BD;" text="DashBoard" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/2329087.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="employeesButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #4E40A0;" text="Employees" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/employees.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="ordersButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Orders" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/ordericon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="vehiclesButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Vehicles" textFill="#f7f7f7">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/vehicle.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="productButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="168.0" style="-fx-background-color: #6B60BD;" text="Products" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/sanitaryproducts.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="warehousesButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Warehouses" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/warehouses.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="suppliersButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Suppliers" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/suppliers.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="departmentsButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Departments" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/department.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="clientButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Clients" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/clients.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="exitButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Exit" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/free-exit-icon-2860-thumb.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane fx:id="EmployeeWindow" prefHeight="754.0" prefWidth="953.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <BorderPane fx:id="ViewSupplierWindow" prefHeight="570.0" prefWidth="782.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <center>
+                              <AnchorPane prefHeight="249.0" prefWidth="222.0" style="-fx-background-color: #524992;">
+                                 <children>
+                                    <HBox AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <TableView fx:id="employeeTable" prefHeight="367.0" prefWidth="623.0" HBox.hgrow="ALWAYS">
+                                            <columns>
+                                              <TableColumn fx:id="EidColMain" prefWidth="83.33334350585938" text="Employee ID" />
+                                              <TableColumn fx:id="employeeNameCol" prefWidth="73.16665649414062" text="Name" />
+                                                <TableColumn fx:id="employeeAddressCol" prefWidth="80.16668701171875" text="Address" />
+                                                <TableColumn fx:id="employeeSalaryCol" prefWidth="54.5" text="Salary" />
+                                                <TableColumn fx:id="employeeJobTypeCol" prefWidth="83.0" text="Job-Type" />
+                                                <TableColumn fx:id="employeePassCol" prefWidth="65.0" text="Pass" />
+                                                <TableColumn fx:id="employeeDidCol" prefWidth="91.0" text="Department ID" />
+                                                <TableColumn fx:id="employeeWidCol" prefWidth="86.33331298828125" text="Warehouse ID" />
+                                            </columns>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </TableView>
+                                          <TableView fx:id="EmployeesPhoneNumberTable" editable="true" prefHeight="332.0" prefWidth="143.0" HBox.hgrow="ALWAYS">
+                                            <columns>
+                                              <TableColumn fx:id="EidCol" prefWidth="75.0" text="ID" />
+                                              <TableColumn fx:id="employeePhoneNumberCol" prefWidth="90.0" text="phoneNumber" />
+                                            </columns>
+                                             <columnResizePolicy>
+                                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                             </columnResizePolicy>
+                                             <effect>
+                                                <DropShadow />
+                                             </effect>
+                                          </TableView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets />
+                                 </BorderPane.margin>
+                              </AnchorPane>
+                           </center>
+                           <bottom>
+                              <AnchorPane prefHeight="323.0" prefWidth="830.0" style="-fx-background-color: #524992;" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Label contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" prefHeight="20.0" prefWidth="200.0" text="Manager ID" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="22.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="EmployeeManagerData" layoutX="271.0" layoutY="15.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Manager Id" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="22.0" layoutY="63.0" prefHeight="20.0" prefWidth="200.0" text="Employee ID" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="52.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="EmployeeIdData" layoutX="171.0" layoutY="50.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Employee Id" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="50.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="27.0" layoutY="83.0" prefHeight="20.0" prefWidth="200.0" text="Employee Name" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="82.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="EmployeeNameData" layoutX="183.0" layoutY="85.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Employee Name" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="80.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="24.0" layoutY="134.0" prefHeight="20.0" prefWidth="200.0" text="Employee Address" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="112.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="EmployeeAddressData" layoutX="202.0" layoutY="124.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Employee Address" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="110.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="27.0" layoutY="153.0" prefHeight="20.0" prefWidth="200.0" text="Employee Pass" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="142.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="EmployeePhoneNumberData" layoutX="500.0" layoutY="219.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Employee Phone Number(111-1111)" AnchorPane.bottomAnchor="81.0" AnchorPane.leftAnchor="500.0" AnchorPane.topAnchor="219.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Button fx:id="AddEmployeeButton" layoutX="286.0" layoutY="290.0" mnemonicParsing="false" onAction="#AddEmployeeButton" prefHeight="20.0" prefWidth="120.0" text="Add" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="286.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                   <Button fx:id="EmployeeClearAllButton" layoutX="547.0" layoutY="197.0" mnemonicParsing="false" onAction="#EmployeeClearAllButton" prefHeight="20.0" prefWidth="120.0" text="Clear All" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="20.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="EmployeeDeleteButton" layoutX="448.0" layoutY="192.0" mnemonicParsing="false" onAction="#EmployeeDeleteButton" prefHeight="20.0" prefWidth="120.0" text="Delete" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="160.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <Button fx:id="AddPhoneNumberButton" layoutX="550.0" layoutY="249.0" mnemonicParsing="false" onAction="#AddPhoneNumberButton" prefHeight="20.0" prefWidth="120.0" text="Add New Phone" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="550.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Button>
+                                    <TextField fx:id="EmployeeSearch" layoutX="488.0" layoutY="31.0" onKeyTyped="#Search" prefHeight="20.0" prefWidth="100.0" promptText="Search" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <ComboBox fx:id="attributeSelection" layoutX="538.0" layoutY="60.0" prefHeight="20.0" prefWidth="150.0" promptText="Choose Attribute" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+                                    <Label layoutX="37.0" layoutY="163.0" prefHeight="20.0" prefWidth="200.0" text="Department ID" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="232.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="37.0" layoutY="163.0" prefHeight="20.0" prefWidth="200.0" text="Employee Jop-Type" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="203.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="37.0" layoutY="163.0" prefHeight="20.0" prefWidth="200.0" text="Employee Salary" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="172.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="37.0" layoutY="163.0" prefHeight="20.0" prefWidth="200.0" text="Warehouse ID" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="262.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="EmployeeWid" layoutX="213.0" layoutY="167.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Warehouse ID" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="260.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="EmployeeDid" layoutX="213.0" layoutY="167.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Department ID" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="230.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="EmployeeJobType" layoutX="213.0" layoutY="167.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Employee Job-Type" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="200.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="EmployeeSalary" layoutX="213.0" layoutY="167.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Employee Salary" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="170.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="EmployeePass" layoutX="484.0" layoutY="200.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Employee Pass" AnchorPane.leftAnchor="220.0" AnchorPane.topAnchor="141.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="EmployeeManagerData1" layoutX="500.0" layoutY="170.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Manager Id" AnchorPane.bottomAnchor="140.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="EmployeeIdData1" layoutX="500.0" layoutY="192.0" prefHeight="20.0" prefWidth="252.0" promptText="Enter Employee Id" AnchorPane.bottomAnchor="110.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+               <top>
+                  <AnchorPane prefHeight="42.0" prefWidth="1001.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox layoutY="-7.0" prefHeight="42.4" prefWidth="1000.8" style="-fx-background-color: #524992;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </top>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@Style.css" />
+      <URL value="@buttons.css" />
+   </stylesheets>
+</StackPane>

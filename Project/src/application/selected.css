@@ -1,0 +1,6 @@
+/* Selected button style */
+.button.selected {
+    -fx-background-color: linear-gradient(#FFD700, #FFC107);
+    -fx-text-fill: black;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1.0), 25, 0, 0, 0);
+}

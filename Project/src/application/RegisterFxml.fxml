@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterController">
+   <children>
+      <AnchorPane layoutX="-13.0" prefHeight="71.0" prefWidth="397.0" style="-fx-background-color: a311d6;" AnchorPane.leftAnchor="-13.0" AnchorPane.rightAnchor="-0.3333333333333144" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="RegisterLabel" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="106.0" layoutY="22.0" prefHeight="28.0" prefWidth="213.0" text=" Register Employee" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP" AnchorPane.bottomAnchor="21.333333333333314" AnchorPane.leftAnchor="106.00000000000003" AnchorPane.rightAnchor="77.99999999999997" AnchorPane.topAnchor="22.0">
+               <font>
+                  <Font name="Arial Black" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane fx:id="regGridPane" alignment="CENTER" layoutX="44.0" layoutY="97.0" prefHeight="416.0" prefWidth="312.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="29.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="LEFT" hgrow="NEVER" maxWidth="187.33333333333331" minWidth="10.0" prefWidth="130.99995930989584" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.6666259765625" minWidth="10.0" prefWidth="180.33337402343753" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="54.333343505859375" minHeight="10.0" prefHeight="54.333343505859375" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.666656494140625" minHeight="10.0" prefHeight="39.666656494140625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.0" minHeight="8.0" prefHeight="29.333333333333314" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.333333333333314" minHeight="10.0" prefHeight="33.99998982747394" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="73.33334350585938" minHeight="10.0" prefHeight="36.66668701171875" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.666646321614564" minHeight="10.0" prefHeight="61.666646321614564" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="regName" prefHeight="17.0" prefWidth="59.0" text="Name:">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="regNamebx" promptText="Name" GridPane.columnIndex="1" />
+            <TextField fx:id="regIDbx" promptText="ID" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="regID" prefHeight="17.0" prefWidth="59.0" text="ID:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="regAddressbx" promptText="address" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="regAddres" prefHeight="17.0" prefWidth="59.0" text="Address:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="regJobbx" promptText="job tybe" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="regJob" prefHeight="17.0" prefWidth="59.0" text="job Tybe:" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="regSalarybx" promptText="salary" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="regSalary" prefHeight="17.0" prefWidth="59.0" text="Salary:" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="regpassword" prefHeight="17.0" prefWidth="59.0" text="password:" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="regConforimpass" prefHeight="17.0" prefWidth="111.0" text="Conforim password:" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="RegSelect" prefHeight="17.0" prefWidth="59.0" text="select:" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="regwarehousebx" promptText="warehose Number" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="regdepartment" layoutX="10.0" layoutY="227.0" prefHeight="17.0" prefWidth="147.0" text="department Number:" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <Label fx:id="regwarehouse" prefHeight="17.0" prefWidth="147.0" text="warehose number:" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="regpasswordbx" promptText="password" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <PasswordField fx:id="regconforimbx" promptText="conforim password" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField fx:id="regDepartmentbx" promptText="department number" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <VBox fx:id="jobLocationbx" spacing="5.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <children>
+                  <RadioButton fx:id="radioDepartment" mnemonicParsing="false" onAction="#selectDepartment" text="department">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="option1" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radioWarehose" mnemonicParsing="false" onAction="#selectWareHouse" text="warehouse" toggleGroup="$option1" />
+               </children>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </VBox>
+            <HBox spacing="75.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <children>
+                  <Button fx:id="rest" mnemonicParsing="false" onAction="#restAll" text="Reset" textFill="#e00c0c" />
+                  <VBox spacing="10.0">
+                     <children>
+                        <Button fx:id="registerButton" mnemonicParsing="false" onAction="#Register" text="Register" />
+                        <Button fx:id="closeButton" mnemonicParsing="false" onAction="#Close" prefHeight="25.0" prefWidth="59.0" text="close">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <GridPane.margin>
+                  <Insets top="30.0" />
+               </GridPane.margin>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

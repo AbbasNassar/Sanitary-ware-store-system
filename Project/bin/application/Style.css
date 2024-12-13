@@ -1,0 +1,51 @@
+/* styles.css */
+
+/* Style for the TableView */
+.table-view {
+	-fx-padding:0px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px; 
+}
+
+/* Style for the TableColumn headers */
+.table-view .column-header-background {
+    -fx-background-radius:8px 8px 0 0;
+    -fx-background-color: #6A1B9A;
+}
+
+.table-view .column-header {
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-alignment:center;
+     -fx-background-color:transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #fff;
+}
+
+/* Style for the TableRow */
+.table-view .table-row-cell {
+    -fx-border-color: transparent transparent #cccF1c transparent;
+    -fx-border-width: 0 0 1px 0;
+}
+
+/* Style for the TableCell */
+.table-view .table-cell {
+    -fx-font-size: 13px;
+    -fx-text-fill: #666666;
+    -fx-padding: 5px;
+}
+
+/* Alternate row colors */
+.table-view .table-row-cell:odd {
+    -fx-background-color: #E8EAF6;
+}
+
+
+.table-view .table-row-cell:even {
+    -fx-background-color: #D1C4E9;
+}

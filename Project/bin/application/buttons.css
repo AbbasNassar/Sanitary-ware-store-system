@@ -1,0 +1,25 @@
+/* styles.css */
+
+/* Default style for all buttons */
+.button {
+    -fx-background-color: #4E40A0;
+    -fx-text-fill: white;
+    -fx-border-color: #4B4090;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 5, 0, 0, 0);
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+}
+
+/* Hover effect */ 
+.button:hover {
+    -fx-background-color: linear-gradient(#5A50A0, #4B4090);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 1.0), 5, 0, 0, 0);
+} 
+
+/* Pressed effect */ 
+.button:pressed {
+    -fx-background-color: linear-gradient(#4B4090, #3A3080);
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.9), 5, 0, 0, 0);
+
+}
+

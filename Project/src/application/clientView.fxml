@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="721.0" prefWidth="900.0" stylesheets="@buttons.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.clientController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane prefHeight="723.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="475.0" prefWidth="170.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="-44.0" layoutY="34.0" prefHeight="507.2" prefWidth="170.4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox prefHeight="507.2" prefWidth="170.4" spacing="3.0" style="-fx-background-color: #6B60BD;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <Button fx:id="dashBoardButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="175.0" style="-fx-background-color: #6B60BD;" text="DashBoard" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/2329087.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="employeesButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Employees" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/employees.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="ordersButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Orders" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/ordericon.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="veiclesButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Vehicles" textFill="#f7f7f7">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/vehicle.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="productsButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="168.0" style="-fx-background-color: #6B60BD;" text="Products" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/sanitaryproducts.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="warehousesButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Warehouses" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/warehouses.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="suppliersButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Suppliers" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/suppliers.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="departmentsButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Departments" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/department.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="clientsButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #4E40A0;" text="Client" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/clients.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                    <Button fx:id="exitButton" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#switchForm" prefHeight="43.0" prefWidth="177.0" style="-fx-background-color: #6B60BD;" text="Exit" textFill="WHITE">
+                                       <graphic>
+                                          <ImageView fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@img/free-exit-icon-2860-thumb.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </left>
+               <top>
+                  <AnchorPane prefHeight="42.0" prefWidth="1001.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox layoutY="-7.0" prefHeight="42.4" prefWidth="1000.8" style="-fx-background-color: #524992;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+               </top>
+               <center>
+                  <AnchorPane prefHeight="417.0" prefWidth="730.0" style="-fx-background-color: #B39DDB;" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane fx:id="clientPane1" layoutX="-3.0" layoutY="19.0" prefHeight="682.0" prefWidth="730.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TableView fx:id="clientTable" editable="true" layoutY="35.0" prefHeight="200.0" prefWidth="438.0" style="-fx-padding: 2px; -fx-border-width: 2px;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="282.0" AnchorPane.topAnchor="35.0">
+                                 <columns>
+                                    <TableColumn fx:id="cidCol" editable="false" prefWidth="75.0" text="client ID" />
+                                    <TableColumn fx:id="nameCol" prefWidth="100.66664123535156" text="Name" />
+                                    <TableColumn fx:id="addressCol" prefWidth="109.99996948242188" text="address" />
+                                    <TableColumn fx:id="paymentCol" maxWidth="199.33343505859375" prefWidth="134.0" text="payment method" />
+                                 </columns>
+                              </TableView>
+                              <HBox alignment="CENTER_LEFT" layoutY="381.0" prefHeight="94.0" prefWidth="730.0" spacing="40.0" style="-fx-background-color: #6B60BD; -fx-background-radius: 8px;" AnchorPane.bottomAnchor="233.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="381.0">
+                                 <children>
+                                    <Label prefHeight="28.0" prefWidth="143.0" style="-fx-background-color: white;" text="Add new Client">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="addClientImg" fitHeight="80.0" fitWidth="67.0" onMouseClicked="#addClient" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/Add.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="28.0" prefWidth="108.0" style="-fx-background-color: red;" text="Delete Row">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fx:id="deleteImage" fitHeight="60.0" fitWidth="66.0" onMouseClicked="#deleteClient" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/delete.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="28.0" prefWidth="64.0" style="-fx-background-color: #76FF03;" text="Refrsh">
+                                       <font>
+                                          <Font name="System Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                    <ImageView fitHeight="58.0" fitWidth="79.0" onMouseClicked="#refresh" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/refresh.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </HBox>
+                              <TableView fx:id="clientPhoneTable" editable="true" layoutX="421.0" layoutY="35.0" prefHeight="199.0" prefWidth="253.0" AnchorPane.rightAnchor="10.0">
+                                 <columns>
+                                    <TableColumn fx:id="cid2Col" editable="false" prefWidth="90.00000250339508" text="cid" />
+                                    <TableColumn fx:id="phoneCol" prefWidth="136.0" text="phone number" />
+                                 </columns>
+                              </TableView>
+                              <TextField fx:id="searchField" layoutX="14.0" layoutY="1.0" onKeyTyped="#search" promptText="search" />
+                              <ComboBox fx:id="searchBox" layoutX="184.0" layoutY="1.0" prefHeight="25.0" prefWidth="124.0" />
+                              <AnchorPane fx:id="addClientPane" layoutX="50.0" layoutY="457.0" prefHeight="175.0" prefWidth="346.0" style="-fx-background-color: #524992; -fx-background-radius: 8px;" AnchorPane.leftAnchor="10.0">
+                                 <children>
+                                    <Label contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" prefHeight="20.0" prefWidth="59.0" text="Client id:" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="22.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="clientIDData" layoutX="271.0" layoutY="15.0" prefHeight="23.0" prefWidth="149.0" promptText="Enter client Id" AnchorPane.leftAnchor="157.99999999999997" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="22.0" layoutY="63.0" prefHeight="20.0" prefWidth="80.0" text="Client name:" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="52.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="clientNameData" layoutX="171.0" layoutY="50.0" prefHeight="23.0" prefWidth="149.0" promptText="Enter client name" AnchorPane.leftAnchor="157.99999999999997" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="27.0" layoutY="83.0" prefHeight="20.0" prefWidth="87.0" text="Client address:" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="82.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="clientAddressData" layoutX="183.0" layoutY="85.0" prefHeight="23.0" prefWidth="149.0" promptText="Enter address" AnchorPane.leftAnchor="157.99999999999997" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="18.0" layoutY="151.0" prefHeight="20.0" prefWidth="91.0" text="Client phone:" textFill="WHITE" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="140.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="clientPhoneData" layoutX="158.0" layoutY="149.0" prefHeight="23.0" prefWidth="147.0" promptText="Enter Phone Number" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="19.999999999999943" AnchorPane.topAnchor="140.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="22.0" layoutY="117.0" prefHeight="20.0" prefWidth="111.0" text="payment method" textFill="WHITE" AnchorPane.topAnchor="110.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="clientPaymentData" layoutX="158.0" layoutY="115.0" prefHeight="23.0" prefWidth="155.0" promptText="Enter payment method" AnchorPane.leftAnchor="157.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="110.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </AnchorPane>
+                              <TableView fx:id="client3Table" layoutX="63.0" layoutY="235.0" prefHeight="137.0" prefWidth="730.0" AnchorPane.bottomAnchor="309.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="240.0">
+                                <columns>
+                                  <TableColumn fx:id="cid3Col" prefWidth="61.33331298828125" text="client ID" />
+                                  <TableColumn fx:id="name3Col" prefWidth="89.33334350585938" text="client Name" />
+                                    <TableColumn fx:id="date3Col" prefWidth="75.0" text="date" />
+                                    <TableColumn fx:id="product3Col" prefWidth="96.66668701171875" text="product name" />
+                                    <TableColumn fx:id="quantity3Col" prefWidth="88.66668701171875" text="quantity" />
+                                    <TableColumn fx:id="price3Col" prefWidth="98.0" text="product Price" />
+                                    <TableColumn fx:id="total3Col" prefWidth="86.66668701171875" text="total Price" />
+                                    <TableColumn fx:id="discount3Col" prefWidth="90.0" text="discount" />
+                                </columns>
+                              </TableView>
+                              <AnchorPane fx:id="addClientPane1" layoutX="365.0" layoutY="457.0" prefHeight="175.0" prefWidth="355.0" style="-fx-background-color: #524992; -fx-background-radius: 8px;" AnchorPane.leftAnchor="364.6666666666667" AnchorPane.rightAnchor="10.0">
+                                 <children>
+                                    <Label contentDisplay="CENTER" layoutX="15.0" layoutY="41.0" prefHeight="20.0" prefWidth="59.0" text="Client id:" textFill="WHITE" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="22.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="clientIDData1" layoutX="271.0" layoutY="15.0" prefHeight="23.0" prefWidth="149.0" promptText="Enter client Id" AnchorPane.leftAnchor="157.99999999999997" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label layoutX="18.0" layoutY="151.0" prefHeight="20.0" prefWidth="91.0" text="Client phone:" textFill="WHITE" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="50.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="clientPhoneData1" layoutX="158.0" layoutY="149.0" prefHeight="23.0" prefWidth="147.0" promptText="Enter Phone Number" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="19.999999999999943" AnchorPane.topAnchor="50.0">
+                                       <font>
+                                          <Font name="SansSerif Bold" size="12.0" />
+                                       </font>
+                                    </TextField>
+                                    <ImageView fx:id="addPhoneImg" fitHeight="80.0" fitWidth="67.0" layoutX="268.0" layoutY="88.0" onMouseClicked="#AddPhone" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="28.333333333333343" AnchorPane.leftAnchor="268.0" AnchorPane.rightAnchor="20.333333333333314" AnchorPane.topAnchor="80.0">
+                                       <image>
+                                          <Image url="@img/Add.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
